@@ -8,7 +8,6 @@ This project showcases a 3D model of sunglasses created using React Three Fiber.
 - **React Three Fiber**: A React renderer for Three.js.
 - **Three.js**: A JavaScript library for creating 3D graphics.
 - **GLTF**: A file format for 3D models.
-- **Blender**: A tool for creating 3D models.
 
 ## Useful Links
 
