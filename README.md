@@ -1,7 +1,7 @@
 
-# Product-3D
+# Sunglasses-3D
 
-This project showcases a 3D model of a chair created using React Three Fiber. The chair features two textures, two types of legs, and various colors and names for the cushion and chair. You can view the live demo [here](https://product-3d-jabedweb.surge.sh/).
+This project showcases a 3D model of sunglasses created using React Three Fiber. Customers can customize the material for the frame, frame tips, glass material, and lens color. You can view the live demo [here](https://sunglasses-3d-jabedweb.surge.sh/).
 
 ## Technologies Used
 
@@ -19,7 +19,4 @@ This project showcases a 3D model of a chair created using React Three Fiber. Th
 - Loading Textures Tutorial: [R3F Loading Textures](https://r3f.docs.pmnd.rs/tutorials/loading-textures)
 - Loading Models Tutorial: [R3F Loading Models](https://r3f.docs.pmnd.rs/tutorials/loading-models)
 
-
-
-Feel free to explore these resources to learn more about 3D modeling and enhance your project.# Glass_3D_product
-# Glass_3D_product
+Feel free to explore these resources to learn more about 3D modeling and enhance your project.
