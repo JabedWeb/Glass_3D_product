@@ -15,7 +15,7 @@ const Scene=(props)=> {
   const { nodes, materials } = useGLTF('sunglasses//scene.gltf')
   
   return (
-    <group {...props} dispose={null}>
+    <group scale={3,3,3} {...props} dispose={null}>
       <mesh geometry={nodes.Object_9.geometry} material={material==="plastic" ? materials.black_plastic : materials.golden_deitalhes} position={[-0.024, 0.203, -0.005]} rotation={[0, 0, 0.212]} scale={[0.017, 0.012, 0.012]} />
       <group position={[-0.024, 0.203, -0.005]} rotation={[0, 0, 0.212]} scale={[0.017, 0.012, 0.012]}>
       <mesh geometry={nodes.Object_12.geometry} material={templateTips==="plastic" ? materials.black_plastic : materials.golden_deitalhes} />
