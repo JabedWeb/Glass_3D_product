@@ -22,8 +22,8 @@ const Configurator = () => {
   } = useCustomization();
 
   return (
-    <div className="configurator">
-      <div className=" max-sm:hidden configurator__section">
+    <div className="configurator p-4">
+      <div className="  configurator__section">
         <div className="configurator__section__title">Glass Material</div>
         <div className="configurator__section__values">
           <div
@@ -40,7 +40,7 @@ const Configurator = () => {
           </div>
         </div>
       </div>
-      <div className="configurator__section max-sm:hidden ">
+      <div className="configurator__section  ">
         <div className="configurator__section__title">Temples Material</div>
         <div className="configurator__section__values">
           <div
@@ -57,7 +57,7 @@ const Configurator = () => {
           </div>
         </div>
       </div>
-      <div className="configurator__section max-sm:hidden ">
+      <div className="configurator__section  ">
         <div className="configurator__section__title">Temples Tips</div>
         <div className="configurator__section__values">
           <div
@@ -74,7 +74,7 @@ const Configurator = () => {
           </div>
         </div>
       </div>
-      <div className="configurator__section  max-sm:hidden">
+      <div className="configurator__section  ">
         <div className="configurator__section__title">Top Bar Color</div>
         <div className="configurator__section__values">
           {lensColors.map((item, index) => (
