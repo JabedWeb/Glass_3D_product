@@ -77,6 +77,7 @@ export const CustomizationProvider=(props)=>{
     const [lensColor, setLensColor] = useState(lensColors[0]);
     const [template, setTemplate] = useState("plastic");
     const [templateTips, setTemplateTips] = useState("plastic");
+    const [customColor, setCustomColor] = useState("#ffffff");
     return(
         <CustomizationContext.Provider value={{
             material,
@@ -88,6 +89,8 @@ export const CustomizationProvider=(props)=>{
             setLensColor,
             templateTips,
             setTemplateTips,
+            customColor,
+            setCustomColor,
         }}>
             {props.children}
         </CustomizationContext.Provider>

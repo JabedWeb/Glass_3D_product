@@ -11,8 +11,9 @@ import React from 'react'
 import { useGLTF } from '@react-three/drei'
 import { useCustomization } from "../contest/Customization";
 const Scene=(props)=> {
-  const {material,lensColor,template,templateTips}=useCustomization();
+  const {material,lensColor,template,templateTips,customColor}=useCustomization();
   const { nodes, materials } = useGLTF('sunglasses//scene.gltf')
+  
   return (
     <group {...props} dispose={null}>
       <mesh geometry={nodes.Object_9.geometry} material={material==="plastic" ? materials.black_plastic : materials.golden_deitalhes} position={[-0.024, 0.203, -0.005]} rotation={[0, 0, 0.212]} scale={[0.017, 0.012, 0.012]} />
@@ -20,10 +21,12 @@ const Scene=(props)=> {
       <mesh geometry={nodes.Object_12.geometry} material={templateTips==="plastic" ? materials.black_plastic : materials.golden_deitalhes} />
       <mesh geometry={nodes.Object_14.geometry} material={template==="plastic" ? materials.black_plastic : materials.golden_deitalhes} />
       </group>
-      <mesh geometry={nodes.Object_17.geometry} material={materials.golden_deitalhes} position={[-0.024, 0.204, -0.005]} rotation={[0, 0, 0.212]} scale={[0.017, 0.012, 0.022]} />
+      <mesh geometry={nodes.Object_17.geometry} material={materials.golden_deitalhes} position={[-0.024, 0.204, -0.005]} rotation={[0, 0, 0.212]} scale={[0.017, 0.012, 0.022]} >
+      <meshStandardMaterial color={lensColor.color}  />
+      </mesh>
 
       <mesh geometry={nodes.Object_20.geometry} material={materials.lens} position={[-0.013, 0.109, -0.004]} rotation={[0, 0, -1.356]} scale={[0.104, 0.265, 0.289]}>
-      <meshStandardMaterial color={lensColor.color} />
+      <meshStandardMaterial color={customColor} />
       </mesh>
     </group>
   )
